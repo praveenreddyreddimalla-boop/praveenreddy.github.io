@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Load Balancing Basics: Round Robin vs Least Connections — Cybersecurity &amp; Availability Blog</title>
+<link rel="icon" href="../assets/logo.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <img src="../assets/logo.png" alt="logo">
+      <div class="brand-text">
+        <h1>Cybersecurity & Availability Blog</h1>
+        <span>@cybersecurity_availabilty_blog</span>
+      </div>
+    </div>
+    <a class="ig-btn" href="https://www.instagram.com/cybersecurity_availabilty_blog/" target="_blank" rel="noopener">Follow on Instagram →</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← All posts</a>
+  <article class="post">
+    <div class="post-meta">
+      <span class="tag tag-Availability">Availability 101</span>
+      <span class="card-date">Aug 11, 2026</span>
+    </div>
+    <h1>Load Balancing Basics: Round Robin vs Least Connections</h1>
+    <p>A load balancer sits in front of a group of servers and decides which server handles each incoming request. Its job is to prevent any single server from being overwhelmed while the others sit idle — a core building block of availability at scale.</p>
+<p>Round robin is the simplest strategy: requests are handed out to servers in a fixed rotating order, one after another. It's easy to implement and works well when every server has roughly equal capacity and every request takes roughly the same amount of work.</p>
+<p>Least connections is more adaptive: the load balancer sends each new request to whichever server currently has the fewest active connections. This handles uneven workloads better — if one server is stuck processing a few slow requests, round robin would still send it new traffic, while least connections routes around it.</p>
+<div class="takeaway">Key takeaway: round robin is simpler and fine for uniform workloads; least connections adds a bit of overhead but responds better to real-world traffic that isn't evenly distributed. Most production load balancers support both, along with more advanced strategies layered on top.</div>
+    <div class="hashtags">#loadbalancing #devops #systemdesign #highavailability #sre</div>
+    <div class="cta-box">
+      <p>Enjoyed this? Follow @cybersecurity_availabilty_blog on Instagram for a new post like this every day.</p>
+      <a class="ig-btn" href="https://www.instagram.com/cybersecurity_availabilty_blog/" target="_blank" rel="noopener">Follow on Instagram →</a>
+    </div>
+    
+  <div class="post-nav">
+    <div><span class="lbl">Previous</span><a href="08-ransomware-as-a-service.html">Ransomware-as-a-Service: How Attacks Got This Cheap and Easy to Launch</a></div>
+    <div style="text-align:right"><span class="lbl">Next</span><a href="10-password-manager-setup.html">Password Manager Setup Walkthrough</a></div>
+  </div>
+  </article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 cybersecurity_availabilty_blog · Educational content, not professional security advice.</p>
+  </div>
+</footer>
+</body>
+</html>

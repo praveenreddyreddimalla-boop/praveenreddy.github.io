@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AWS us-east-1 Outage: A Lesson in Single Points of Failure — Cybersecurity &amp; Availability Blog</title>
+<link rel="icon" href="../assets/logo.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <img src="../assets/logo.png" alt="logo">
+      <div class="brand-text">
+        <h1>Cybersecurity & Availability Blog</h1>
+        <span>@cybersecurity_availabilty_blog</span>
+      </div>
+    </div>
+    <a class="ig-btn" href="https://www.instagram.com/cybersecurity_availabilty_blog/" target="_blank" rel="noopener">Follow on Instagram →</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← All posts</a>
+  <article class="post">
+    <div class="post-meta">
+      <span class="tag tag-Behind-the-Breach">Behind the Breach</span>
+      <span class="card-date">Aug 13, 2026</span>
+    </div>
+    <h1>The AWS us-east-1 Outage: A Lesson in Single Points of Failure</h1>
+    <p>Amazon Web Services' us-east-1 region, based in Northern Virginia, is one of the oldest and most heavily used regions in AWS's cloud. Because of that, it has also become something of an unofficial default for many companies — including some of AWS's own internal services — which means outages there have historically had an outsized ripple effect across the internet.</p>
+<p>When incidents have hit that region, they've knocked out or degraded services for a wide range of well-known apps and websites simultaneously, even ones that had no obvious business relationship to each other — the common thread was simply that they all depended on the same underlying region.</p>
+<p>The broader lesson for engineering teams is about single points of failure: relying on one region, one provider, or one dependency — no matter how reliable it usually is — creates a ceiling on how available your own service can ever be. True resilience typically requires multi-region or multi-provider redundancy, with a real, tested failover path rather than just a plan on paper.</p>
+<div class="takeaway">Key takeaway: "but it's a major cloud provider, it won't go down" is not a resilience strategy. Ask what happens to your service specifically when your primary region does go down — because eventually, it will.</div>
+    <div class="hashtags">#outage #cloudcomputing #devops #resilience #casestudy</div>
+    <div class="cta-box">
+      <p>Enjoyed this? Follow @cybersecurity_availabilty_blog on Instagram for a new post like this every day.</p>
+      <a class="ig-btn" href="https://www.instagram.com/cybersecurity_availabilty_blog/" target="_blank" rel="noopener">Follow on Instagram →</a>
+    </div>
+    
+  <div class="post-nav">
+    <div><span class="lbl">Previous</span><a href="10-password-manager-setup.html">Password Manager Setup Walkthrough</a></div>
+    <div style="text-align:right"><span class="lbl">Next</span><a href="12-myth-strong-password-alone.html">Myth: "A Strong Password Alone Keeps My Account Safe"</a></div>
+  </div>
+  </article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 cybersecurity_availabilty_blog · Educational content, not professional security advice.</p>
+  </div>
+</footer>
+</body>
+</html>

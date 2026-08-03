@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Failover Explained: Active-Active vs Active-Passive Setups — Cybersecurity &amp; Availability Blog</title>
+<link rel="icon" href="../assets/logo.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <img src="../assets/logo.png" alt="logo">
+      <div class="brand-text">
+        <h1>Cybersecurity & Availability Blog</h1>
+        <span>@cybersecurity_availabilty_blog</span>
+      </div>
+    </div>
+    <a class="ig-btn" href="https://www.instagram.com/cybersecurity_availabilty_blog/" target="_blank" rel="noopener">Follow on Instagram →</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← All posts</a>
+  <article class="post">
+    <div class="post-meta">
+      <span class="tag tag-Availability">Availability 101</span>
+      <span class="card-date">Aug 18, 2026</span>
+    </div>
+    <h1>Failover Explained: Active-Active vs Active-Passive Setups</h1>
+    <p>Failover is what happens when one system fails and traffic needs to move to another. How smoothly that happens depends heavily on which failover architecture is in place.</p>
+<p>In an active-passive setup, one system handles all live traffic while a standby copy sits idle, ready to take over if the primary fails. This is simpler to reason about and cheaper to run, but it means the standby system is otherwise unused most of the time, and failover — even automated — usually introduces some delay while the passive system spins up to full readiness.</p>
+<p>In an active-active setup, multiple systems handle live traffic simultaneously, typically behind a load balancer. If one fails, the others simply absorb its share of the traffic — often with no noticeable interruption to users. This delivers much better availability and makes better use of resources, but it's meaningfully more complex to build, since all active systems need to stay in sync (particularly around data consistency).</p>
+<div class="takeaway">Key takeaway: active-passive trades availability for simplicity; active-active trades complexity for availability. Most large-scale systems lean toward active-active specifically because a few seconds of failover delay is often unacceptable at scale.</div>
+    <div class="hashtags">#failover #highavailability #devops #systemdesign #sre</div>
+    <div class="cta-box">
+      <p>Enjoyed this? Follow @cybersecurity_availabilty_blog on Instagram for a new post like this every day.</p>
+      <a class="ig-btn" href="https://www.instagram.com/cybersecurity_availabilty_blog/" target="_blank" rel="noopener">Follow on Instagram →</a>
+    </div>
+    
+  <div class="post-nav">
+    <div><span class="lbl">Previous</span><a href="15-supply-chain-attacks.html">Supply Chain Attacks: When the Danger Comes Through a Trusted Vendor</a></div>
+    <div style="text-align:right"><span class="lbl">Next</span><a href="17-patch-management.html">Why 'I'll Update Later' Is One of the Riskiest Habits in Tech</a></div>
+  </div>
+  </article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 cybersecurity_availabilty_blog · Educational content, not professional security advice.</p>
+  </div>
+</footer>
+</body>
+</html>
